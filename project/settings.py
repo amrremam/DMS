@@ -18,7 +18,7 @@ DEBUG  = config('DEBUG')
 # DEBUG = True
 
 
-ALLOWED_HOSTS = ['127.0.0.1','.localhost', ]
+ALLOWED_HOSTS = ['127.0.0.1','.localhost', 'kayanapp-738a5bdedd9c.herokuapp.com']
 
 
 # Application definition
