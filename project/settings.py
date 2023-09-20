@@ -78,6 +78,8 @@ TEMPLATES = [
     },
 ]
 
+CORS_ALLOW_ALL_ORIGINS = True
+
 WSGI_APPLICATION = 'project.wsgi.application'
 
 

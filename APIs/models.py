@@ -11,7 +11,9 @@ class New(models.Model):
 
 
 class CompanyImg(models.Model):
+
+    name = models.CharField(max_length=60, null=True)
     coImg = models.ImageField(upload_to='companyImg', height_field=None, width_field=None, max_length=None)
 
     def __str__(self):
-        return self.coImg
+        return self.name
