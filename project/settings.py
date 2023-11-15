@@ -24,6 +24,7 @@ ALLOWED_HOSTS = ['127.0.0.1','.localhost', 'dms-e200fbf29541.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'APIs',
     'corsheaders',
     'django.contrib.admin',
@@ -92,13 +93,6 @@ DATABASES = {
     'default': config('DATABASE_URL', default=default_dburl, cast=dburl),
 }
 
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
 
 
 # Password validation
