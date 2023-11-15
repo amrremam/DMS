@@ -19,7 +19,7 @@ DEBUG  = config('DEBUG')
 
 
 ALLOWED_HOSTS = ['127.0.0.1','.localhost', 'dms.up.railway.app']
-
+CSRF_TRUSTED_ORIGINS = ['https://dms.up.railway.app']
 
 # Application definition
 
@@ -137,3 +137,25 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+JAZZMIN_SETTINGS = {
+    "welcome_sign": "DMS Dashboard",
+    
+    "topmenu_links": [
+
+        # Url that gets reversed (Permissions can be added)
+        {"name": "Home",  "url": "admin:index", "permissions": ["auth.view_user"]},
+
+        # external url that opens in a new window (Permissions can be added)
+        {"name": "Support", "url": "https://neuranexco.com/index.php/contact-us", "new_window": True},
+
+        # model admin to link to (Permissions checked against model)
+        {"model": "auth.User"},
+
+        # App with dropdown menu to all its models pages (Permissions checked against models)
+        {"app": "books"},
+    ],
+    "copyright": "Meccano Digital Solutions",
+}
