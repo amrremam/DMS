@@ -87,12 +87,31 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 # Database
 
-from dj_database_url import parse as dburl
-default_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
+# from dj_database_url import parse as dburl
+# default_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
+
+# DATABASES = {
+#     'default': config('DATABASE_URL', default=default_dburl, cast=dburl),
+# }
+
+
+
+
 
 DATABASES = {
-    'default': config('DATABASE_URL', default=default_dburl, cast=dburl),
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "railway",
+        "USER": "postgres",
+        "PASSWORD": "4eDc*eD6a6CFfCcECGFE22b1CB1gD2GB",
+        "HOST": "viaduct.proxy.rlwy.net",
+        "PORT": "55702",
+    }
 }
+
+
+
+
 
 
 
