@@ -18,7 +18,7 @@ DEBUG  = config('DEBUG')
 # DEBUG = True
 
 
-ALLOWED_HOSTS = ['127.0.0.1','.localhost', 'dms-e200fbf29541.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','.localhost', 'dms.up.railway.app']
 
 
 # Application definition
@@ -56,6 +56,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'project.urls'
 
 CORS_ALLOWED_ORIGINS = [
+        "https://dms.up.railway.app",
         "https://example.com",
         "https://sub.example.com",
         "http://localhost:8080",
