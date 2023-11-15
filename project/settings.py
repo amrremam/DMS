@@ -85,18 +85,6 @@ CORS_ALLOW_ALL_ORIGINS = True
 WSGI_APPLICATION = 'project.wsgi.application'
 
 
-# Database
-
-# from dj_database_url import parse as dburl
-# default_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
-
-# DATABASES = {
-#     'default': config('DATABASE_URL', default=default_dburl, cast=dburl),
-# }
-
-
-
-
 
 DATABASES = {
     "default": {
