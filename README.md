@@ -1,2 +1,0 @@
-# DMS
-Medical Project

@@ -77,7 +77,7 @@ DATABASES = {
         "USER": "postgres",
         "PASSWORD": "41D1g1b4EA--c511B1Caa-*Ed5c5g*G*",
         "HOST": "roundhouse.proxy.rlwy.net",
-        "PORT": "26541",
+        "PORT": "35352",
     }
 }
 
